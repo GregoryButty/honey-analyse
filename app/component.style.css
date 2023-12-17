@@ -1,0 +1,42 @@
+.textTitle {
+    font-size: 6.615rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+.titleImage {
+    margin-left: 3rem;
+}
+
+.prevyAndText {
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+.prevy {
+    font-size: 2.205rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+.text {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 2.5rem;
+}
+
+.brendLink {
+    color: #2DA7FF;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
