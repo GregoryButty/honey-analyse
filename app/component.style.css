@@ -1,42 +1,43 @@
 .textTitle {
     font-size: 6.615rem;
+    margin-bottom: 2rem;
+    font-size: 6.615rem;
+
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 2rem;
 }
 
 .titleImage {
     margin-left: 3rem;
 }
 
-.prevyAndText {
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-}
-
 .prevy {
     font-size: 2.205rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 2rem;
 }
 
 .text {
     font-size: 1.125rem;
+    margin-left: 5.5rem;
+    margin-bottom: 2rem;
+
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: 2.5rem;
+}
+
+.text ul li {
+    margin: .3rem;
 }
 
 .brendLink {
     color: #2DA7FF;
-    font-family: Inter;
     font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     text-decoration-line: underline;
 }

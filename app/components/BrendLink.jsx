@@ -1,11 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
-const BrendLink = ({path, textLink}) => {
+export default function BrendLink({path, linkText}) {
     return (
-        <Link className="brendLink" href={path}>{textLink}</Link>
+        <Link className="brendLink" href={path}>{linkText}</Link>
     );
 };
-
-export default BrendLink;
-

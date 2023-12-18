@@ -1,20 +1,17 @@
 import React from "react";
 import Image from "next/image"
-import "../component.style.css"
 
-const Title = ({textTitle, titleImage}) => {
+export default function Title ({titleText, titleImage, isPriority}) {
     return (
-        <h1 className="textTitle">{textTitle}
+        <h1 className="textTitle">{titleText}
             <Image
                 className="titleImage"
                 src={titleImage}
                 width={60}
                 height={60}
                 alt="bee"
-                priority={false}
+                priority={isPriority}
             />
         </h1>
     )
 }
-
-export default Title;

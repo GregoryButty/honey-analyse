@@ -1,5 +1,6 @@
 import BrendLink from "./components/BrendLink"
 import Title from "./components/Title"
+import Prevy from "./components/Prevy"
 import Text from "./components/Text"
 
 export default function Home() {
@@ -8,16 +9,17 @@ export default function Home() {
 
       <div className="blur">
 
-        <Title textTitle="Вітаю бджілка" titleImage="/icons/bee.png"/>
-        <Text prevy="Тут ми займаємося такими речами:" text={
-          <ul>
-            <li>Збираємо інформацію.</li>
-            <li>Аналізуємо інформацію.</li>
-            <li>Робимо висновки.</li>
-            <li>Насолоджуємося життям.</li>
-          </ul>}
-        />
-        <BrendLink path="/log-in" textLink="Увійти"/>
+        <Title titleText="Вітаю бджілка" titleImage="/icons/bee.png" isPriority="false"/>
+        <Prevy prevyText="Тут ми займаємося такими речами:" />
+        <Text text={
+            <ul>
+              <li>Збираємо інформацію.</li>
+              <li>Аналізуємо інформацію.</li>
+              <li>Робимо висновки.</li>
+              <li>Насолоджуємося життям.</li>
+            </ul>
+        } />
+        <BrendLink path="/log-in" linkText="Увійти"/>
 
       </div>
 
