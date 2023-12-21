@@ -1,7 +1,7 @@
-import BrendLink from "./components/BrendLink"
-import Title from "./components/Title"
-import Prevy from "./components/Prevy"
-import Text from "./components/Text"
+import BrendLink from "../components/BrendLink"
+import Title from "../components/Title"
+import Prevy from "../components/Prevy"
+import Text from "../components/Text"
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
               <li>Насолоджуємося життям.</li>
             </ul>
         } />
-        <BrendLink path="/log-in" linkText="Увійти"/>
+        <BrendLink path="/checkUser" linkText="Увійти"/>
 
       </div>
 
