@@ -40,4 +40,14 @@
     color: #2DA7FF;
     font-size: 1.125rem;
     text-decoration-line: underline;
+    margin-right: 2rem;
+}
+
+.deletePostBtn {
+    border: none;
+    background: none;
+    color: #2DA7FF;
+    font-size: 1.125rem;
+    text-decoration-line: underline;
+    cursor: pointer;
 }

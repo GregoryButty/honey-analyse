@@ -18,20 +18,19 @@ export default function CheckUser() {
         try {
             e.preventDefault();
 
-            const req = await fetch("http://localhost:3000/api/checkDataUser", {
+            const res = await fetch("http://localhost:3000/api/checkDataUser", {
                 method: "POST",
-                // headers: {"Content-type": "application/json"},
+                headers: {"Content-type": "application/json"},
                 body: JSON.stringify({nickName, pass})
             })
 
-            // console.log( await req.json())
-            // const user = await req.json();
-            // const userId = user.message[0]._id
-            // console.log(user.message[0]._id)
 
-            if (req.ok)
-                route.push(`/spaceUser/${nickName}`);
-            else
+            // console.log(res);
+
+            if (res.ok) {
+                const resData = await res.json();
+                route.push(`/spaceUser/${resData.data.user.userName}/${resData.data.user.userId}/postHoney`);
+            } else
                 route.push("/")
 
         } catch (error) {
@@ -42,12 +41,10 @@ export default function CheckUser() {
     return (
         <section className="container">
 
-            <div className="blur">
-
                 <Title
-                    titleText="Увійди в свій вулик"
-                    titleImage="/icons/Ylik.png"
-                    isPriority="false"
+                    titleText={"Увійди в свій вулик"}
+                    titleImage={"/icons/Ylik.png"}
+                    isPriority={false}
                 />
 
                 <FormCheckUsr
@@ -60,13 +57,9 @@ export default function CheckUser() {
 
 
                 <BrendLink
-                    path="/"
-                    linkText="Повернутися"
+                    path={"/"}
+                    linkText={"Повернутися"}
                 />
-
-            </div>
-
-            <div className="block"/>
 
         </section>
     )

@@ -1,0 +1,32 @@
+.analytucPosts {
+    width: 50rem;
+    height: 10rem;
+}
+
+.allSumBox {
+    display:inline-flex;
+    animation-name: MuveForAllSumBox;
+    animation-duration: .75s;
+}
+
+.ulBox {
+    margin-left: 2rem;
+    font-size: 1.125rem;
+}
+
+.liBox {
+    list-style-type: none;
+}
+
+/* .pBox {
+
+} */
+
+@keyframes MuveForAllSumBox {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

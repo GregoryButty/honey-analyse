@@ -8,11 +8,15 @@ export async function POST(req) {
         await connMongoDB();
         const user = await User.find({nickName, pass});
 
-        if (user.length != 0 && user[0].nickName == nickName && user[0].pass == pass){
+        if (user[0].nickName == nickName && user[0].pass == pass){
             console.log(user);
-            return NextResponse.json({message: "User found"}, {status: 200});
+            return NextResponse.json(
+                {data: {message: "User foud", user: {userName: nickName, userId: user[0]._id}}},
+                {status: 200});
         } else {
-            return NextResponse.json({message: "User not found"}, {status: 400});
+            return NextResponse.json(
+                {message: "User not found"},
+                {status: 400});
         }
     } catch (error) {
         console.log(error);

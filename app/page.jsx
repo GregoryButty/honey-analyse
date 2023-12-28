@@ -7,8 +7,6 @@ export default function Home() {
   return (
     <main className="container">
 
-      <div className="blur">
-
         <Title titleText="Вітаю бджілка" titleImage="/icons/bee.png" isPriority="false"/>
         <Prevy prevyText="Тут ми займаємося такими речами:" />
         <Text text={
@@ -20,10 +18,6 @@ export default function Home() {
             </ul>
         } />
         <BrendLink path="/checkUser" linkText="Увійти"/>
-
-      </div>
-
-      <div className="block"/>
 
     </main>
   )

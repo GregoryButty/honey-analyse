@@ -1,0 +1,41 @@
+.formConteiner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 32.5rem;
+    height: 38.75rem;
+    background: #fff;
+    color: #000;
+    border-radius: 0.625rem;
+    padding: 3rem;
+}
+
+.lableText {
+    font-size: 2.205rem;
+}
+
+.inputFill {
+    font-size: 1.125rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px #000 solid;
+    background: #fff;
+    color: gray;
+    margin: 2.5rem 0;
+}
+
+.btnFormSubmit{
+    font-size: 1.125rem;
+    margin-top: 12rem;
+    padding: 1rem 0;
+    color: #fff;
+    border: none;
+    background: #000;
+    border-radius: 0.625rem;
+}

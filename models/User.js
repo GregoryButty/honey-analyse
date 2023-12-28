@@ -2,8 +2,14 @@ import mongoose, { Schema } from "mongoose";
 
 const userSchema = new Schema(
     {
-        nickName: String,
-        pass: String
+        nickName: {
+            type: String,
+            required: true
+        },
+        pass: {
+            type: String,
+            required: true
+        }
     },
     {
         timestamps: true
